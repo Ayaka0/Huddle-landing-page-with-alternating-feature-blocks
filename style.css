@@ -33,7 +33,7 @@ header {
 }
 
 .header-logo {
-  max-height: 15px;
+  height: 15px;
 }
 
 .header-btn {
@@ -64,6 +64,10 @@ header {
   margin-bottom: 2em;
 }
 
+div p {
+  margin-bottom: 2em;
+}
+
 .section-title-btn {
   width: auto;
   height: auto;
@@ -78,6 +82,7 @@ header {
 .img-mockup {
   margin-top: 4em;
 }
+
 /* Main Section */
 main {
   margin: 2em 1em 2em 1em;
@@ -176,25 +181,6 @@ footer {
   margin-bottom: 1em;
 }
 
-/*
-.location::before {
-  content: url(images/icon-location.svg);
-  padding-right: 1.5em;
-  float: left;
-  transform: translateY(5px);
-}
-
-.phone::before {
-  content: url(images/icon-phone.svg);
-  padding-right: 1.5em;
-}
-
-.email::before {
-  content: url(images/icon-email.svg);
-  padding-right: 1.5em;
-}
-*/
-
 .location,
 .phone {
   padding-bottom: 1em;
@@ -245,4 +231,107 @@ i {
   font-size: 0.725rem;
   text-align: center;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 960px) {
+  header {
+    padding: 2em;
+  }
+
+  .header-logo {
+    width: 20%;
+    height: 20%;
+  }
+  .header-btn {
+    padding: 1em 4em;
+  }
+  .header-title {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .section-title {
+    line-height: 1.2;
+  }
+  .intro {
+    display: flex;
+    margin-top: 3em;
+    text-align: start;
+  }
+  .intro-flex {
+    margin-right: 2em;
+  }
+  .img-mockup {
+    width: 50%;
+    height: auto;
+    transform: translateY(-80px);
+    margin-left: 1em;
+  }
+  .section-title-btn {
+    padding: 1em 3em 1em 3em;
+  }
+  main {
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+
+  main img {
+    width: 40%;
+    height: auto;
+  }
+  .main-part1,
+  .main-part2,
+  .main-part3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+    padding-left: 4em;
+  }
+  .main-part1,
+  .main-part3 {
+    flex-direction: row-reverse;
+  }
+
+  .row1,
+  .row3 {
+    padding-right: 6em;
+  }
+
+  .row2 {
+    padding-left: 6em;
+  }
+
+  .main-part4 {
+    width: 60%;
+    margin-left: 10em;
+  }
+  .footer-wrapper {
+    margin: 4em;
+  }
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .infos {
+    width: 40%;
+  }
+  .social {
+    transform: translateY(1em);
+  }
+  .copyright {
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-btn {
+    padding: 0.5em 4em 0.5em 4em;
+    border-radius: 30px;
+  }
+  .main-part4 {
+    margin-left: 17em;
+  }
 }
